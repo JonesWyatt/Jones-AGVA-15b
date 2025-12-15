@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> My Business </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+   <body>
+     
+    <nav> <div class="linklayout"> <div class="link1">
+    <a href="home.html">Home</a>
+    </div>
+    
+    <div class="link2">
+    <a href="contact.html">Contact Us</a>
+    </div>
+    
+    <div class="link3">
+    <a href="#">Products & Service</a>
+    </div> </div>
+    </nav>
+    
+    <div id="homecontent">
+      
+  <div class="sidebar"> <img src="logo5.jpg" alt="logo"> <ul> <li> Weekly Classes </li> <li> Shopping</li> <li> Friendly Advice</li> </ul> </div>
+  
+ <div class="main"> <h1> Welcome! </h1> <p> Welcome to Nature's Nursury! here we strive to provide gardening supplies and tips whenever possible. Come down to our local shop on weekdays and learn a variety of gardening skills from our professional classes! We also sell all the gardening supplies you need, so come on down!</p> </div>
+ 
+  </div>
+  
+   <div id="specialoffers" class="call-outs-container">
+     
+      <div class="call-out">
+        <h4>Special Offer!</h4>
+        <p>
+         For only this week, Nature's Nursury is offering a 50% discount on all classes, advance or beginner, if you use the promo code, "NurturingNature."
+        </p>
+        <a href="#" class="featurebtn1"> Learn More </a>
+      </div>
+      
+      <div class="call-out">
+        <h4>Upcoming Sale!</h4>
+        <p>
+          In addition to the special offer, Natures Nursury is having a 10%, 25%, and 50% off sale on all merchandise marked with a certain colored tag, red, green, and gold respecively.
+        </p>
+        <a href="#" class="featurebtn1"> Learn More </a>
+        </div>
+        
+        </div>
+        
+        <div class="HideAdsButton" style="tent-align:center;"> 
+        <button id="hidebutton" onclick="hideOffers()"> Hide Offers </button></div>
+        
+        <script>
+          function hideOffers() {
+            var x = document.getElementById("specialoffers");
+            var y = document.getElementById("hidebutton");
+            x.style.display = "none";
+            y.style.display = "none";
+          }
+        </script>
+        
+  </body>
+</html>
