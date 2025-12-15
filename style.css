@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: darkgreen;
+  color: white;
+  line-height: 1.6;
+  text-align: center;
+}
+
+h4 {
+  font-size: 20px;
+}
+
+#content {
+  max-width: 900px;
+  margin: auto;
+  margin-top: 40px;
+  padding: 0 30px;
+  position: relative;
+  animation-name: floatingright;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes floatingright {
+  0% {
+    top: -25px;
+    left: -1000px;
+  }
+  
+  100% {
+    top: -25px;
+    left: 0px;
+  }
+}
+
+#showcase {
+  height: 300px;
+}
+
+#showcase h1 {
+  font-size: 50px;
+  position: relative;
+  line-height: 1.3;
+  animation-name: floatingdown;
+  animation-duration: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes floatingdown {
+  0% {
+    top: -60px;
+  }
+  
+  100% {
+    top:165px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: white 1px solid;
+  padding: 1rem 2rem;
+  margin-top: 30px;
+  opacity: 0;
+  animation-name: btn;
+  animation-duration: 3s;
+  animation-delay: 3s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes btn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.btn:hover {
+  background-color: green;
+}
+
+.btn:active {
+  background-color: black;
+}
+
+a:link, a:visited {
+  background-color: darkgreen;
+  color: white;
+  text-decoration: none;
+  display: inline-block;
+  margin-bottom: 10px;
+  border: white 1px solid;
+  padding: 1rem 2rem;
+  margin-top: 30px;
+}
+
+.linklayout {
+  font-size: 13px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "link1 link3 link2";
+  padding: 20px;
+}
+
+.link1 {
+  grid-area: link1;
+}
+
+.link2 {
+grid-area: link2;
+}
+
+.link3 {
+  grid-area: link3;
+}
+
+a {
+transition-property: background-color;
+  transition-duration: 1s;
+}
+
+a:hover {
+  background-color: green;
+}
+ 
+#homecontent {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas: "sidebar main";
+  margin-top: 20px;
+}
+
+.sidebar ul {
+  grid-area: sidebar;
+  list-style: disc;
+  padding-left: 90px; 
+  text-align: left;
+}
+
+.main {
+  grid-area: main;
+  padding-right: 20px;
+}
+
+.call-outs-container {
+  padding: 10px;
+  max-width: 800px;
+  margin: 40px auto 0 auto;
+ display: grid;
+ grid-template-columns: 1fr 1fr;
+ gap: 20px;
+}
+
+.call-out {
+  padding: 20px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.call-out:nth-child(1) {
+  background-color: blue;
+  border: 2px solid white;
+}
+
+.call-out:nth-child(2) {
+  background-color: purple;
+   border: 2px solid white;
+}
+
+.featurebtn {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+  border: white 1px solid;
+  padding: 1rem 2rem;
+  margin-top: 30px;
+}
+
+.contactmenu {
+  color: black;
+  background-color: white;
+  margin: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "contact1 contact2"
+}
+
+.contact1 {
+  grid-area: contact1;
+  padding: 20px;
+  text-align: left;
+  margin: 10px;
+}
+
+.contact2 {
+  grid-area: contact2;
+   padding: 20px;
+   text-align: left;
+   margin: 10px;
+}
+
+form {
+  display: inline-block;
+  padding: 1em;
+  border: 1px solid #cccccc;
+  border-radius: 1em;
+}
+
+p + p {
+  margin-top: 1em;
+}
+
+label {
+  display: inline-block;
+  min-width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  font: 1em sans-serif;
+  width: 300px;
+  border: 2px solid white;
+}
+
+input:focus,
+textarea:focus {
+  outline-style: solid;
+  outline-color: black;
+}
+
+textarea {
+  vertical-align: top;
+  height: 5em;
+}
+
+.button {
+  padding-left: 90px;
+}
+
+button {
+  margin-left: 0.5em;
+}
