@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title> My Business </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+  </head>
+  
+   <body>
+     
+    <nav> <div class="linklayout"> <div class="link1">
+    <a href="home.html">Home</a>
+    </div>
+    
+    <div class="link2">
+    <a href="contact.html">Contact Us</a>
+    </div>
+    
+    <div class="link3">
+    <a href="#">Products & Service</a>
+    </div> </div>
+    </nav>
+    
+    <div class="contactmenu">
+      <div class="contact1"> <h3> Location </h3> <p> <b>Address:</b> 1234 State Street Phoenix, AZ 12345 <br> <b>Phone:</b> 602-789-1011 <br> <b>Email:</b> info@naturesnursury.com</p></div> 
+      <div class="contact2"> <h3> Hours of Operation</h3> <p> <b>Mon-Fri:</b> 9am - 5pm <br><b>Sat-Sun:</b> 12pm - 5pm</p></div>
+    </div>
+    
+    <form action="https://us-central1-alhsofunctions.cloudfunctions.net/alhsoFormExample" method="post">
+  <p>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name" />
+  </p>
+  <p>
+    <label for="mail">Email:</label>
+    <input type="email" id="mail" name="user_mail" />
+  </p>
+  <p>
+    <label for="msg">Message:</label>
+    <textarea id="msg" name="user_message"></textarea>
+  </p>
+  
+  <p class="button">
+  <button type="submit">Send your message</button>
+</p>
+</form>
